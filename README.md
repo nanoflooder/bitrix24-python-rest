@@ -1,5 +1,5 @@
 # Bitrix24 REST API for Python
-REFSPEC FIX
+REFSPEC FIX!!
 Easy way to communicate with bitrix24 portal over REST without OAuth 2.0
 
 ## Description
