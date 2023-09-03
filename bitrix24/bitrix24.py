@@ -87,7 +87,7 @@ class Bitrix24(object):
 
             p = self._prepare_params(params)
 
-            if method.rsplit('.', 1)[0] in ['add', 'update', 'delete', 'set']:
+            if method.rsplit('.', 1)[1] in ['add', 'update', 'delete', 'set', 'attachTranscription']:
                 r = requests.post(url, data=p, timeout=self.timeout, verify=self.safe).json()
             else:
                 r = requests.get(url, params=p, timeout=self.timeout, verify=self.safe)
